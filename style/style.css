@@ -1,0 +1,82 @@
+@import url("https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600;700&display=swap");
+
+:root {
+  --box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
+  --blue-color: #a2d2ff;
+  --white-color: #f1faee;
+  --purple-color: #023047;
+}
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  text-decoration: none;
+  list-style: none;
+  font-family: "Poppins", sans-serif;
+}
+
+body {
+  background-color: var(--blue-color);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  min-height: 100vh;
+}
+
+.container {
+  position: relative;
+  width: 100%;
+  max-width: 1000px;
+  min-height: 1000px;
+  display: grid;
+  grid-template-columns: 1fr 2fr;
+  box-shadow: var(--box-shadow);
+}
+
+.leftSide {
+  padding: 40px;
+  background-color: var(--purple-color);
+}
+
+.profilBox {
+  position: relative;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding-bottom: 40px;
+  border-bottom: 1px solid rgb(255, 255, 255);
+}
+
+.profilBox .imgBox {
+  width: 200px;
+  height: 200px;
+  overflow: hidden;
+  border-radius: 50%;
+  margin-bottom: 8px;
+}
+
+.profilBox .imgBox img {
+  width: 100%;
+  height: 100%;
+  object-fit: center;
+}
+
+.profilBox h2 {
+  font-size: 1.5em;
+  text-transform: uppercase;
+  color: var(--white-color);
+  font-weight: 600;
+  line-height: 1.4em;
+  text-align: center;
+}
+
+.profilBox h2 span {
+  font-weight: 300;
+  font-size: 0.8em;
+}
+
+.rightSide {
+  padding: 40px;
+  background-color: var(--white-color);
+}
