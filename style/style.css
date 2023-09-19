@@ -179,7 +179,8 @@ body {
   text-align: justify;
 }
 
-.pengalaman ul li {
+.pengalaman ul li,
+.projek ul li {
   margin-bottom: 0.75rem;
 }
 
@@ -198,4 +199,26 @@ body {
 .pengalaman ul li h4,
 .projek ul li h5 {
   font-weight: 400;
+}
+
+.projek ul li h5 {
+  font-size: 1rem;
+  margin-bottom: 0.75rem;
+}
+
+.projek .projekDescription {
+  display: flex;
+  align-items: center;
+}
+
+.projek .projekDescription .projekImg {
+  width: 120px;
+  height: 60px;
+  overflow: hidden;
+  border-radius: 0.5rem;
+}
+
+.projek .projekDescription .projekImg img {
+  width: 100%;
+  object-fit: center;
 }
