@@ -203,12 +203,15 @@ body {
 
 .projek ul li h5 {
   font-size: 1rem;
-  margin-bottom: 0.75rem;
+  margin-bottom: 0.5rem;
+  color: var(--dark-color);
+  font-weight: 500;
 }
 
 .projek .projekDescription {
   display: flex;
   align-items: center;
+  justify-content: space-between;
 }
 
 .projek .projekDescription .projekImg {
@@ -216,9 +219,21 @@ body {
   height: 60px;
   overflow: hidden;
   border-radius: 0.5rem;
+  /* margin-right: 0.75rem; */
 }
 
 .projek .projekDescription .projekImg img {
   width: 100%;
   object-fit: center;
+}
+
+.projek .projekTeks {
+  width: 75%;
+}
+
+.projek .projekTeks p {
+  font-size: 0.875rem;
+  color: var(--dark-color);
+  font-weight: 400;
+  text-align: justify;
 }
