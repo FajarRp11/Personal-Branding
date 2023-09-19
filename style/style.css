@@ -1,4 +1,4 @@
-@import url("https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600;700&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600;700&family=Roboto+Condensed:wght@700&display=swap");
 
 :root {
   --box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
@@ -6,6 +6,7 @@
   --white-color: #f1faee;
   --purple-color: #023047;
   --orange-color: #f4a261;
+  --dark-color: #001219;
 }
 
 * {
@@ -75,7 +76,7 @@ body {
 }
 
 .profilBox h2 span {
-  font-weight: 300;
+  font-weight: 400;
   font-size: 0.8em;
 }
 
@@ -85,11 +86,12 @@ body {
 }
 
 .info .title {
-  font-weight: 600;
+  font-weight: 700;
+  font-family: "Roboto Condensed", sans-serif;
   color: var(--white-color);
   letter-spacing: 1px;
   text-transform: uppercase;
-  font-size: 1.25rem;
+  font-size: 1.5rem;
   margin-bottom: 0.5rem;
 }
 
@@ -117,7 +119,7 @@ body {
 
 .info.pendidikan ul li h5,
 .info.pendidikan ul li h4 {
-  font-weight: 300;
+  font-weight: 400;
 }
 
 .info.pendidikan ul li h2,
@@ -132,7 +134,7 @@ body {
 
 .info.bahasa ul li h5 {
   color: var(--white-color);
-  font-weight: 300;
+  font-weight: 400;
   margin-bottom: 0.5rem;
   font-size: 0.85rem;
 }
@@ -144,16 +146,55 @@ body {
 }
 
 .info.bahasa ul li > div .percent {
-  width: 95%;
   height: 100%;
   background-color: var(--blue-color);
-}
-
-.info.bahasa ul li > div .percent.english {
-  width: 75%;
 }
 
 .rightSide {
   padding: 40px;
   background-color: var(--white-color);
+}
+
+.rightSide .title {
+  font-family: "Roboto Condensed";
+  font-weight: 700;
+  color: var(--purple-color);
+  letter-spacing: 1px;
+  text-transform: uppercase;
+  font-size: 1.5rem;
+  margin-bottom: 0.75rem;
+}
+
+.tentangSaya,
+.pengalaman {
+  margin-bottom: 2rem;
+  padding: 0 0 0.75rem 0;
+  border-bottom: 1px solid var(--purple-color);
+}
+
+.tentangSaya .tentangTeks {
+  font-size: 0.875rem;
+  color: var(--dark-color);
+  font-weight: 400;
+  text-align: justify;
+}
+
+.pengalaman ul li {
+  margin-bottom: 0.75rem;
+}
+
+.pengalaman ul li h2 {
+  font-size: 1.25rem;
+  font-weight: 600;
+}
+
+.pengalaman ul li h5,
+.pengalaman ul li h2,
+.pengalaman ul li h4 {
+  color: var(--dark-color);
+}
+
+.pengalaman ul li h5,
+.pengalaman ul li h4 {
+  font-weight: 400;
 }
