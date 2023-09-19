@@ -195,6 +195,7 @@ body {
 }
 
 .pengalaman ul li h5,
-.pengalaman ul li h4 {
+.pengalaman ul li h4,
+.projek ul li h5 {
   font-weight: 400;
 }
